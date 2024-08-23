@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Eletricista</title>
+
+    <style>
+        /*box-sizingFaz com que todas as medidas seja incluídas na minha tab externa. Sem ter os descontos a mais*/
+        *{box-sizing: border-box;
+            margin: 0PX;
+        } 
+
+        body{
+            margin: 0 auto;
+        }
+
+        /*Inserindo uma imagem direto no css*/
+        header{
+            background: url(eletricista1.jpg) no-repeat center;
+            height: 600px;
+            top: 0px; /*Distância do topo*/
+        }
+
+        /*Ta para centralizar as imagens*/
+        .centraliza_img {
+            display: block; /*define um elemento HTML como um bloco, ou seja, ele ocupará toda a largura disponível de seu contêiner e iniciará uma nova linha antes e depois de si.*/
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        .abaixo {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -99;
+            margin: 0 auto;
+        }
+
+
+        /*Estilizando lista*/
+        ul, li{
+            width: 300px;
+            list-style-type: none; /*remover os marcadores de uma lista*/
+            margin: auto;
+            padding: 0;
+            background-color: #faed27;
+        }
+
+        /*Estilizando elementos da lista*/
+        li, a{
+            display: block; /*define um elemento HTML como um bloco, ou seja, ele ocupará toda a largura disponível de seu contêiner e iniciará uma nova linha antes e depois de si.*/
+            text-decoration: none; /*remove o sublinhado*/
+            color: #000;
+            padding: 8px 16px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        /*Estilização de cor de fontes*/
+        .fontedes{
+            font-size: 5rem;
+            color: black ;
+        }
+
+        .aside1 {
+            top: 450;
+            float: right; /* posicionanamento da tag*/
+            width: 25%; /*Coloquei a largura do aside1 com 25% da pagina. (aqui estão as imagens laterais)*/
+        }
+
+        .setecinco {
+            float: left; /*Posicionamento da tag*/
+            width: 75%; /*Coloquei a largura da seption setecinco com 75% da pagina. Complemntando os 100% se somados com iside anteior*/
+            padding: 20px;
+            text-align: justify; 
+        }
+
+        /*Estilização do fundo preto com imagem*/
+        .fundo_preto {
+            //background: url(notuno.png) no-repeat center;
+            background-color: #000;
+            height: 234px;
+            clear: both; /*Limpa toda regra acima (anteior) nos elmentos pai e aplica esta regra. (Setecinco e aside1 nesse caso)*/
+            margin: 0 auto;
+            border-radius: 20px; /*Arredonda as bordas do fundo*/
+        }
+
+        /*Estilização da classe serviços que contém as 3 caixa com fundo amarelo*/
+        .servicos {
+            background-color: #e88a0b;
+            border-radius: 10px; /*arredondamento dos cantos*/
+            width: 216px;
+            height: 254px;
+            display: inline-flex;
+            color: white;
+            padding: 20px;
+
+        }
+
+        .centraliza_div {
+            //display: inline-block; /*Testei antes mas a de baixo ficou melhor*/
+            text-align: center;
+
+        }
+        th{
+            text-align: left;
+           
+        }
+        td{
+            padding: 10px;
+        }
+
+        input[type=submit]{
+            background-color:#f3ac13;
+            color:white;
+            border: #f3ac13;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+<p class="fontedes">Contrate um<br> profissional qualificado<br> para não perder<br><span style="color: orangered";>dinheiro</span> e <span style="color: orangered";>tempo</span></p> <!--span = crio uma personalização dentro do próprio texto-->
+    </header>
+
+        <!--Criando uma div pra criar um botão(bem simples) Se tivesse um signficado semântico eu teria que colocar um section, articon, nave, article
+        <div>: Geralmente usado para agrupamento de conteúdo para fins de estilo ou layout, sem qualquer significado semântico.
+            
+            <article>: Usado para conteúdo independente e completo, como uma postagem de blog ou uma notícia.-->
+            
+    <div style="background-color: #222121; padding: 0 auto;"><!-- padding. Espaçamento entre o elemento anterior e ela-->
+        <ul>
+            <li><a href="">ORÇAMENTOS</a></li>
+        </ul>
+    </div>
+
+
+    <!--A tag <section> em HTML é usada para definir seções distintas de conteúdo em uma página web. 
+    Cada <section> geralmente agrupa um conjunto de conteúdo tematicamente relacionado, como capítulos de um livro, partes de um artigo, ou diferentes áreas de uma página.
+
+    Características da Tag <section>:
+    Semântica: Ajuda a estruturar o conteúdo de forma lógica, tornando a página mais compreensível tanto para desenvolvedores quanto para motores de busca.
+    Uso em conjunto com <h1>, <h2>, etc.: É comum que cada <section> comece com um título (<h1> a <h6>), definindo o tema ou propósito da seção.
+
+        Use <section> para agrupar conteúdo que pertence a um mesmo tema ou propósito.
+    Se o conteúdo da seção puder ser entendido independentemente do restante do documento, ou se for parte de um índice de conteúdo, o uso de <section> é apropriado.
+        -->
+    <section class="setecinco">
+        <br><br>
+        <p class="fontedes"> Sua família pode correr<br> risco de vida com uma<br> instalação mal feita ou<br> até com instações<br> antigas<br></p>
+        <br><br>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate magni delectus voluptates quos! Voluptatem, praesentium deleniti. Vitae distinctio, hic laboriosam perspiciatis minus adipisci facere fugiat quaerat modi quas explicabo deserunt ad ratione, quod ab. Quibusdam est officia ad dignissimos veritatis laborum tempora autem impedit dolorum illo earum illum reprehenderit fugit sint harum repellat, odio veniam, cumque tenetur deserunt, quae vel enim. Error, quam atque perspiciatis, voluptatum nesciunt dignissimos dolores, reprehenderit at fuga ratione pariatur sit placeat mollitia provident debitis?</p>
+        <br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facilis in illum voluptates, corporis nulla porro optio consequatur nam fuga nobis distinctio laboriosam praesentium modi beatae quisquam maiores qui assumenda aut, consequuntur molestias tempora sunt, ipsum error? Fugit quod quos ratione laboriosam praesentium provident ea eum necessitatibus. Numquam cum id architecto, perspiciatis perferendis quibusdam rerum est? Quidem voluptatum natus omnis molestiae dicta, velit, aperiam corrupti provident quaerat voluptatibus molestias iusto esse repellat placeat possimus facilis. Rerum commodi deleniti debitis maiores asperiores, quidem iure tempora, consequatur sed odit eaque velit excepturi amet quod inventore porro. Tenetur accusamus tempora recusandae debitis nisi, impedit facilis. Placeat reprehenderit quo sint nemo, inventore error illo laboriosam! Quis error consequatur iste incidunt, dolorem voluptatum atque. Necessitatibus dolores fugit consequatur dicta iste eius vero, ipsam accusantium, accusamus minus, dolorum obcaecati aliquid perferendis adipisci magni repellat? Animi illum excepturi voluptatibus molestiae voluptates in, ratione minima aperiam voluptate eveniet?</p>
+        </section>
+
+
+
+
+    <!--<aside> em HTML é usada para definir conteúdo que é tangencialmente relacionado ao conteúdo principal de uma página, como barras laterais, informações complementares, ou links relacionados. 
+    Normalmente, é usada para conteúdo que complementa o conteúdo principal sem ser parte central dele.
+    Características da Tag <aside>:
+    Conteúdo Complementar: Inclui informações que, se removidas, não afetariam a compreensão do conteúdo principal.
+    Uso Semântico: Ajuda a melhorar a acessibilidade e a estrutura semântica de uma página.-->
+    <aside class="aside1">
+            <br><br><br><br><br><br><br><br>
+    <img src=" eletrica_ruim1.jpg" class="centraliza_img" width="200" height="200"><br>
+            <img src="eletrica_ruim2.jpg" class="centraliza_img" width="200" height="200"><br>
+            <img src="eletrica_ruim3.jpg" class="centraliza_img" width="200" height="200"><br>
+            </aside>
+
+
+        <!--Criando uma nova seção com o fundo preto com uma imagem e um texto ao lado-->
+        <section class="fundo_preto">
+            <div style="float: left; width: 25%;">
+                <img src="img_banner_2.png" style="margin: 3rem;">
+            </div>
+            <div style="float:left">
+                <h1 style="margin: 3rem; color:aliceblue;">SERVIÇOS COM QUALIDADE E<br> RESPONSABILIDADE</h1>
+            </div>
+        </section>
+
+        <!--Seção que cria as as 3 caixa amarelas-->
+        <section class="centraliza_div">
+            <br><br>
+            <div class="servicos" style="padding: 15px;">
+                <h2>Projetos Elétricos</h2>
+            </div>
+            <div class="servicos" style="padding: 15px;">
+                <h2>Instalações</h2>
+            </div>
+            <div class="servicos" style="padding: 15px" ;>
+                <h2>Manutenção</h2>
+            </div>
+            <br><br><br>
+        </section>
+
+
+
+
+        <!--Crinado seção de clientes-->
+        <section>
+            <div style="background-color: #222121;">
+                <h1 style="color: white; margin-left: 35px;">clientes</h1>
+            </div>
+        </section>
+        <!--Inserindo as imagens na seção clientes-->
+        <section class="centraliza_div">
+            <br><br><br>
+            <div style="float: left; width: 33%;"> <!--1ª div. Criei um div sem significado semântico, com 2 imagem a esquerda verticais, ocupando 33% da página-->
+                <img src="ebanx.png">
+                <br>
+                <br>
+                <img src="spacex.png">
+            </div>
+            <div style="float: left; width: 33%; margin-top: 100px;"> <!--2ª div. Criei um div sem significado semântico, com imagem a esquerda, ocupando 33% da página. 
+                margin-top em CSS é usada para definir a margem superior de um elemento. Ela controla o espaço que fica acima do elemento, separando-o de outros elementos ou do topo do contêiner em que está inserido-->
+                <img src="eletrobras.png">
+            </div>
+            <div style="float: left; width: 33%;"><!--3ª div. Criei um div sem significado semântico, com 2 imagem a esquerda verticais, ocupando 33% da página-->
+                <img src="microsoft.png">
+                <br>
+                <br>
+                <img src="nubank.png">
+            </div>
+        </section>
+
+
+
+         <!--Crinado seção de Contato-->
+        <section style="clear: both;"> <!--Limpando as estilizaçoes das divs de cima-->
+            <div style="background-color: #222121;">
+                <h1 style="color: white; margin-left: 35px;">contato</h1>
+            </div>
+        </section>
+        <!--Seção de formulário-->
+        <section style="float: left; width: 50%;"> <!--Seção de formulário flutuando a esquerda com 50% da largura-->
+            <form> <!--Abrindo formulário-->
+                <br><br>
+                            <table> <!--Criando um tabela sem borda-->
+                
+                <tr>
+                    <th>Nome</th>
+                    <td><input type="text" size="50"></td>
+                </tr>
+                
+                <tr>
+                    <th>E-mail</th>
+                    <td><input type="email" size="50"></td>
+                </tr>
+                
+
+                <tr>
+                    <th>Telefone</th>
+                    <td><input type="tel" size="14" placeholder="11-98745-1665"  pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required></td>
+                    <<!--placeholder melhora a usabilidade do formulário, oferecendo uma orientação direta sobre o que deve ser inserido em cada campo.
+
+                    pattern - validar a entrada do usuário, garantindo que o valor inserido siga um formato específico. 
+                    Nesse caso, o formato exigido é para uma sequência de números que seguem o padrão XX-XXXXX-XXXX, onde:
+
+                    XX: Dois dígitos numéricos.
+                    -: Um hífen.
+
+                    XXXXX: Cinco dígitos numéricos.
+                    -: Outro hífen.
+
+                    XXXX: Quatro dígitos numéricos.-->
+                </tr>
+                
+
+                <tr>
+                    <th>Mensagem:</th>
+                    <td><textarea rows="5" cols="50"></textarea></td>
+                </tr>
+                
+
+                <tr>
+                    <th></th>
+                    <td><input type="submit" value="Enviar"></td>
+                </tr>
+            </table>
+            <br><br>
+        </form>
+        </section>
+
+        <!--Criando um novo inside para criar a imagem final-->
+        <aside style="float: left;">
+            <div>
+                <br><br>
+            <img src="imgF.png" width="280px" height="150px">
+        </div >
+        </aside>
+
+        <!--Rodapé-->
+        <footer style="clear: both;"><!--Limpando os floats anteriores-->
+            <div style="padding: 30px; background-color: #222121; color: white; font-size: larger;">
+                <table>
+                <tr><td><img src="whats.png">(XX) 9XXXX-XXXX        </td><td></td><td><img src="localiza.png">Minha localização</td></tr>
+                <tr><td><img src="mail.png">email@email.com.br</td></tr>
+                <tr><td></td><td></td><td>Layout desenvolvido para fins educacionais</td> </tr>
+                </table>
+            </div>
+        </footer>
+        </main>
+
+</body>
+</html>
